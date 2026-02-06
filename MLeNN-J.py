@@ -41,7 +41,7 @@ def edited_nearest_neighbors(X, y, k=3, output_file=None):
         print(f'Jaccard distances with neighbors of instance {i}: {jaccard_distances}')
 
         # Check if two or more Jaccard distances are equal to 1
-        if sum(distance > 0.75 for distance in jaccard_distances) == 3:# under two instances jaccard distance 1 or >=2
+        if sum(distance > 0.75 for distance in jaccard_distances) == 3:# under two instances jaccard distance 1 or >=2,also change value for 0.5 or 0.75
             keep_indices[i] = False
             exclude_indices.append(i)
 
