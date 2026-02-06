@@ -8,12 +8,12 @@ from sklearn.neighbors import NearestNeighbors
 # Load the dataset into a Pandas DataFrame
 #df = pd.read_csv(StringIO(data), header=None)
 # Load your dataset (replace 'your_dataset.csv' with the actual filename)
-df_1 = pd.read_csv('d_CALL500_norm_tr1.csv', header=None)#####autoalagi
+df_1 = pd.read_csv('d_CALL500_norm_tr1.csv', header=None)
 lenth_train_set_1= len(df_1)
 
 # Extract features (X) and labels (y)
-X = df_1.iloc[:, :-174].values  # Features allagi
-y = df_1.iloc[:, -174:].values.astype(int)  # Labels allagi numbers of labels
+X = df_1.iloc[:, :-174].values  # Features 
+y = df_1.iloc[:, -174:].values.astype(int)  # Labels-numbers of labels
 
 def lvd(x, y):
     # Convert the input NumPy arrays to lists
@@ -94,12 +94,12 @@ reduction_rate_1 = (1 - (length_cleaned_df_1  / lenth_train_set_1) )* 100
 print('final Reduction Rate is:', reduction_rate_1)
 
 #---------------------------------data-2---------------------------------------------------------
-df_2 = pd.read_csv('d_CALL500_norm_tr2.csv', header=None)#####autoalagi
+df_2 = pd.read_csv('d_CALL500_norm_tr2.csv', header=None)
 lenth_train_set_2= len(df_2)
 
 # Extract features (X) and labels (y)
-X = df_2.iloc[:, :-174].values  # Features allagi
-y = df_2.iloc[:, -174:].values.astype(int)  # Labels allagi numbers of labels
+X = df_2.iloc[:, :-174].values  # Features 
+y = df_2.iloc[:, -174:].values.astype(int)  # Labels-numbers of labels
 
 # Apply the ENN rule and save the cleaned dataset to a new CSV file
 output_path = r'enn_CALL500_tr2.csv'  # Change this to the desired output path
@@ -115,12 +115,12 @@ print('final Reduction Rate is:', reduction_rate_2)
 
 
 #---------------------------------data-3---------------------------------------------------------
-df_3 = pd.read_csv('d_CALL500_norm_tr3.csv', header=None)#####autoalagi
+df_3 = pd.read_csv('d_CALL500_norm_tr3.csv', header=None)
 lenth_train_set_3= len(df_3)
 
 # Extract features (X) and labels (y)
-X = df_3.iloc[:, :-174].values  # Features allagi
-y = df_3.iloc[:, -174:].values.astype(int)  # Labels allagi numbers of labels
+X = df_3.iloc[:, :-174].values  # Features 
+y = df_3.iloc[:, -174:].values.astype(int)  # Labels-numbers of labels
 
 # Apply the ENN rule and save the cleaned dataset to a new CSV file
 output_path = r'enn_CALL500_tr3.csv'  # Change this to the desired output path
@@ -135,12 +135,12 @@ reduction_rate_3 = (1 - (length_cleaned_df_3  / lenth_train_set_3) )* 100
 print('final Reduction Rate is:', reduction_rate_3)
 
 #---------------------------------data-4---------------------------------------------------------
-df_4 = pd.read_csv('d_CALL500_norm_tr4.csv', header=None)#####autoalagi
+df_4 = pd.read_csv('d_CALL500_norm_tr4.csv', header=None)
 lenth_train_set_4= len(df_4)
 
 # Extract features (X) and labels (y)
-X = df_4.iloc[:, :-174].values  # Features allagi
-y = df_4.iloc[:, -174:].values.astype(int)  # Labels allagi numbers of labels
+X = df_4.iloc[:, :-174].values  # Features 
+y = df_4.iloc[:, -174:].values.astype(int)  # Labels-numbers of labels
 
 # Apply the ENN rule and save the cleaned dataset to a new CSV file
 output_path = r'enn_CALL500_tr4.csv'  # Change this to the desired output path
@@ -155,12 +155,12 @@ reduction_rate_4 = (1 - (length_cleaned_df_4  / lenth_train_set_4) )* 100
 print('final Reduction Rate is:', reduction_rate_4)
 
 #---------------------------------data-5---------------------------------------------------------
-df_5 = pd.read_csv('d_CALL500_norm_tr5.csv', header=None)#####autoalagi
+df_5 = pd.read_csv('d_CALL500_norm_tr5.csv', header=None)
 lenth_train_set_5= len(df_5)
 
 # Extract features (X) and labels (y)
-X = df_5.iloc[:, :-174].values  # Features allagi
-y = df_5.iloc[:, -174:].values.astype(int)  # Labels allagi numbers of labels
+X = df_5.iloc[:, :-174].values  # Features 
+y = df_5.iloc[:, -174:].values.astype(int)  # Labels-numbers of labels
 
 # Apply the ENN rule and save the cleaned dataset to a new CSV file
 output_path = r'enn_CALL500_tr5.csv'  # Change this to the desired output path
